@@ -1,0 +1,79 @@
+.cartas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartas img{
+  height: 561px;
+  min-width: 160px;
+  transition: all linear 0.5s;
+  visibility: visible;
+}
+
+.ng-hide {
+  height: 0;
+}
+
+.sudoka{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 500px;
+}
+
+.header{
+  flex-basis: 100%;
+}
+
+.desistiu{
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
+  height: 50px;
+}
+
+.desistiu:hover{
+  cursor: pointer;
+}
+
+button{
+  margin-bottom: 10px;
+  margin-left: 1vw;
+}
+
+.mat-dialog-container{
+  background-color: #8b9142 !important;
+}
+
+img{
+  padding-bottom: -1px;
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-between;
+  width: fit-content;
+}
+
+.home{
+  display: none;
+}
+
+@media screen and (max-width: 550px) {
+  .d-block {
+    display: block;
+  }
+  .buttons{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+  }
+  .home{
+    display: block;
+  }
+  .cartas img{
+    height: 400px;
+    min-width: 160px;
+  }
+}

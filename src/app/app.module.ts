@@ -31,6 +31,7 @@ import { SuekaHomeComponent } from './components/sueka/sueka-home/sueka-home.com
 import { SuekaRegrasComponent } from './components/sueka/sueka-regras/sueka-regras.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { SuekaDialogAmarelouComponent } from './components/sueka/sueka-dialog-amarelou/sueka-dialog-amarelou.component';
+import { SuekaHomeSoftComponent } from './components/sueka/sueka-home-soft/sueka-home-soft.component';
 
 registerLocaleData(localePt);
 
@@ -44,6 +45,7 @@ registerLocaleData(localePt);
     SuekaHomeComponent,
     SuekaRegrasComponent,
     SuekaDialogAmarelouComponent,
+    SuekaHomeSoftComponent,
   ],
   entryComponents: [SuekaDialogAmarelouComponent],
   imports: [

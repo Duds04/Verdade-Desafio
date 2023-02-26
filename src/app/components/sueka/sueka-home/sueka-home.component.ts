@@ -24,7 +24,7 @@ export class SuekaHomeComponent implements OnInit {
     headerService.headerData = {
     title: 'Truth or Dare',
     icon: 'videogame_asset',
-    routeUrl: '/sueka'
+    routeUrl: '/jogo'
   }}
 
   ngOnInit(): void {
@@ -60,7 +60,7 @@ export class SuekaHomeComponent implements OnInit {
     if (obj.condicao) {
       this.card = `assets/img/cartas/${this.numCard}.png`
       this.indexCard = obj.i
-      console.log("this.card "+ this.card, this.indexCard )
+      // console.log("this.card "+ this.card, this.indexCard )
     } else if (this.naoRepetirCard.length == 0) {
       this.anyService.showMessage("Todos os cards foram sorteados!")
       this.card = ``
@@ -78,15 +78,14 @@ export class SuekaHomeComponent implements OnInit {
     try {
       this.naoRepetirCard.splice(this.indexCard, 1)
       this.anyService.showMessage("Carta removida com sucesso!")
-      this.card = `Sem Imagem`
-      this.numCard = 0
+      this.sorteio(this.anyService.sorteador(1, 0));
     } catch (e) {
       console.log(e)
     }
   }
 
   reproduzirAudio(){
-    const audio = document.querySelector('audio')
+    const audio = document.querySelector('#galinha') as HTMLAudioElement
     audio?.play()
   }
 

@@ -57,8 +57,26 @@ button{
   display: none;
 }
 
+.buttons{
+  white-space: nowrap;
+}
+
+.button{
+  margin-right: 2vw;
+  margin-top: 1vw;
+}
+
 @media screen and (max-width: 550px) {
   .explicacao{
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .buttons{
+    white-space: normal;
+  }
+  #soft{
+    margin-bottom: -4px;
   }
 }

@@ -34,4 +34,9 @@ export class HomeComponent implements OnInit {
     this.anyService.showMessage('É só seguir o que as cartas mandam!')
   }
 
+  reproduzirAudio(){
+    const audio = document.querySelector('#bebe') as HTMLAudioElement
+    audio?.play()
+  }
+
 }

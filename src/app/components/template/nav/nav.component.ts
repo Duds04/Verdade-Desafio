@@ -14,6 +14,11 @@ export class NavComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  reproduzirAudio(){
+    const audio = document.querySelector('#bebe') as HTMLAudioElement
+    audio?.play()
+  }
+
   @ViewChild('nav') myNav!:ElementRef;
 
   @HostListener('window:scroll') onWindowScroll() {

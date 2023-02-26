@@ -1,5 +1,4 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-<script src="rolagem.js" type="text/html"></script>
+<audio id="bebe" src="assets/music/choro-bebe.mp3"></audio>
 
 <mat-sidenav-container class="container">
   <mat-sidenav  #nav class="sidenav mat-elevation-z2" mode="side" opened fixedInViewport="true">
@@ -12,11 +11,17 @@
               </i>
               Início
           </a>
-          <a mat-list-item routerLink="/sueka">
+          <a mat-list-item routerLink="/jogo">
               <i class="material-icons">
                 videogame_asset
               </i>
               Truth or Dare
+          </a>
+          <a mat-list-item routerLink="/soft" (click)="reproduzirAudio()">
+            <i class="material-icons">
+              child_friendly
+            </i>
+            Soft Version
           </a>
           <a mat-list-item routerLink="/regras">
             <i class="material-icons">

@@ -1,3 +1,5 @@
+<audio id="bebe" src="assets/music/choro-bebe.mp3"></audio>
+
 <div>
   <mat-card class="home mat-elevation-z3">
     <mat-card-title class="title">Bem Vindo!</mat-card-title>
@@ -5,8 +7,11 @@
       <img src="assets/img/download.png" alt="">
     </mat-card-subtitle>
   </mat-card>
-  <button mat-raised-button color="primary" class="start" gradient="peach" routerLink="/sueka">Bora Jogar!</button>
-  <button mat-raised-button color="primary" class="help" (click)="explicacao()">Como funciona o game?</button>
+  <button mat-raised-button color="primary" class="start" gradient="peach" routerLink="/jogo">Bora Jogar!</button>
+  <span class="buttons">
+    <button id="soft" mat-raised-button color="primary" class="help" (click)="reproduzirAudio()" routerLink="/soft">Só para baixinhos</button>
+    <button mat-raised-button color="primary" class="help" (click)="explicacao()">Infos e Plus</button>
+  </span>
   <mat-card class="explicacao d-none">
     <mat-card-title class="title">Man... </mat-card-title>
     <div>
@@ -18,8 +23,7 @@
       <br>
       Agora bom jogo meu amigo, se divirta 😉
     </div>
-
-    <button mat-raised-button color="primary" (click)="regras()" routerLink="/regras">Regras</button>
+    <button mat-raised-button color="primary" class="button" (click)="regras()" routerLink="/regras">Regras</button>
   </mat-card>
 
 </div>

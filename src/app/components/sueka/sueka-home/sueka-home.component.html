@@ -1,3 +1,5 @@
+<audio id="galinha" src="assets/music/galinha.mp3"></audio>
+
 <div class="buttons">
   <button mat-raised-button color="primary" (click)="sorteio(0)">Sortear Verdade</button>
   <button mat-raised-button color="primary" (click)="sorteio(1)">Sortear Desafio</button>
@@ -9,11 +11,10 @@
   <mat-card class="sudoka mat-elevation-z3">
     <div class="header">
       <mat-card-title class="title">Carta {{numCard}}</mat-card-title>
-      <mat-card-subtitle class="subtitle">Sigas as orientações apresentadas nas cartas!</mat-card-subtitle>
+      <mat-card-subtitle class="subtitle">Não fez? Beba ou pague alguma prenda!</mat-card-subtitle>
     </div>
 
     <img src="{{card}}" alt="">
   </mat-card>
 </div>
 <img class="desistiu" (click)="openDialog()" src="assets/img/pinto.webp" alt="">
-<audio src="assets/music/galinha.mp3"></audio>
