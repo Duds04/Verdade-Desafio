@@ -1,0 +1,64 @@
+a{
+  color: #f8be2bb5;
+}
+
+.home .title{
+  /* rem -> faz relação com o tamanho raiz da pag */
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.home .subtitle{
+  /* em -> se basei na fonte anterior */
+  font-size: 1.1rem;
+}
+
+.home img{
+  height: 30px;
+  margin-bottom: -8px;
+}
+
+.help{
+  margin: 30px 20px 30px 0px;
+  font-size: 1rem;
+  padding: 5px 10px;
+}
+
+button{
+  background-color: #6a48a8;
+  margin-top: 10px;
+}
+
+.start{
+  /* background: linear-gradient(10deg,#4568DC,#B06AB3); */
+  margin-right: 20px;
+  font-size: 1.3rem;
+  padding: 10px;
+}
+
+.explicacao{
+  width: 50%;
+}
+
+.explicacao img{
+  height: 15px;
+}
+
+.menor{
+  font-size: 10px;
+  background-color: #f8be2bb5;
+}
+.menor img{
+  height: 10px;
+}
+
+.d-none{
+  display: none;
+}
+
+@media screen and (max-width: 550px) {
+  .explicacao{
+    width: 90%;
+  }
+}

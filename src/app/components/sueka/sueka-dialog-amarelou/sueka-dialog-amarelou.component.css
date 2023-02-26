@@ -1,0 +1,13 @@
+
+.mat-dialog-actions {
+  justify-content: flex-end;
+}
+
+.mat-dialog-container{
+  background-color: #8b9142 !important;
+}
+
+h1{
+  font-weight: 400;
+  font-size: 1.7rem;
+}

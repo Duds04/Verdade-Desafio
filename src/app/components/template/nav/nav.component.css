@@ -1,0 +1,38 @@
+
+
+.sidenav {
+  background-color: #BE952D;
+  width: 200px;
+  margin-top: 70px;
+}
+
+.sidenav a {
+  color: #fff;
+}
+
+/* espaçamento entre o nome do icone e o icone */
+.sidenav i {
+  padding-right: 10px;
+}
+
+.content {
+  padding: 16px;
+  background-color: #535353;
+  box-shadow: none;
+}
+
+@media screen and (min-height: 760px) {
+  .content {
+    height: 80vh;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .sidenav {
+    display: none;
+  }
+}
+
+.randomClass{
+  margin-top: 0px !important;
+}

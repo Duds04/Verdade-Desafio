@@ -1,0 +1,15 @@
+<mat-toolbar class='header'> <!-- eleva o componente em relação a tela (através de um sistema de sombra) -->
+  <span>
+      <a routerLink="/">
+          <img src="assets/img/logo.png" alt="logo" class="logo"> <!-- usando o caminho raiz (src) como base -->
+      </a>
+  </span>
+  <span class="title-group">
+      <a routerLink="{{routeUrl}}">
+          <i class="material-icons">
+              {{icon}}
+          </i>
+          {{title}}
+      </a>
+  </span>
+</mat-toolbar>

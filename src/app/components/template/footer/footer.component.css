@@ -1,0 +1,19 @@
+.footer {
+  /* fixando o componente usando a parte de baixo como referencia */
+  position: fixed;
+  bottom: 0;
+
+  /* colocando os componentes dentro do footer alinhados no final da linha */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer > span {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.yellow{
+  color: #ffc400;
+}
+

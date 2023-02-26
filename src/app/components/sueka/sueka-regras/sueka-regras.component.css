@@ -1,0 +1,67 @@
+.regras .title {
+  /* rem -> faz relação com o tamanho raiz da pag */
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.regras .subtitle {
+  /* em -> se basei na fonte anterior */
+  /* font-size: 1rem; */
+  font: 400 14px/20px Roboto, "Helvetica Neue", sans-serif;
+  color: #fff;
+}
+
+.regras {
+  margin-left: 3%;
+  width: 90%;
+}
+
+.regras img {
+  height: 15px;
+}
+
+.menor {
+  font-size: 10px;
+}
+
+.yellow {
+  background-color: #afb63671;
+}
+
+.final {
+  font-weight: 500;
+  font-size: large;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.904);
+}
+
+.areaButton {
+  display: flex;
+  margin-top: 30px;
+  justify-content: flex-end;
+  margin-left: 3%;
+  width: 91%;
+}
+
+.home{
+  display: none;
+}
+
+@media screen and (max-width: 550px) {
+  .regras{
+    width: 90%;
+    margin-left: 0%;
+  }
+  ul{
+    margin-left: 1px;
+  }
+  .home{
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 5px;
+  }
+}

@@ -1,0 +1,32 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="rolagem.js" type="text/html"></script>
+
+<mat-sidenav-container class="container">
+  <mat-sidenav  #nav class="sidenav mat-elevation-z2" mode="side" opened fixedInViewport="true">
+      <!-- nav no lado, aberto, fixo na area de visualização, tamanho de espaçamento em relação ao topo  -->
+      <mat-nav-list class="nav-list">
+          <a mat-list-item routerLink="/" >
+              <!-- deixanodo item em uma linha separada com um espaçamento entre as bordas laterias -->
+              <i class="material-icons">
+                  home
+              </i>
+              Início
+          </a>
+          <a mat-list-item routerLink="/sueka">
+              <i class="material-icons">
+                videogame_asset
+              </i>
+              Truth or Dare
+          </a>
+          <a mat-list-item routerLink="/regras">
+            <i class="material-icons">
+              assignment
+            </i>
+            Regras
+        </a>
+      </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="content" >
+      <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

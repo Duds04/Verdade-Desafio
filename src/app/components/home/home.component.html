@@ -1,0 +1,25 @@
+<div>
+  <mat-card class="home mat-elevation-z3">
+    <mat-card-title class="title">Bem Vindo!</mat-card-title>
+    <mat-card-subtitle class="subtitle">O clássico jogo de verdade ou desafio em versão web
+      <img src="assets/img/download.png" alt="">
+    </mat-card-subtitle>
+  </mat-card>
+  <button mat-raised-button color="primary" class="start" gradient="peach" routerLink="/sueka">Bora Jogar!</button>
+  <button mat-raised-button color="primary" class="help" (click)="explicacao()">Como funciona o game?</button>
+  <mat-card class="explicacao d-none">
+    <mat-card-title class="title">Man... </mat-card-title>
+    <div>
+      Vc realmente não sabe o que é verdade ou desafio... 🤔
+      <br>
+      Então meu caro, não vai ser eu que vai te explicar kk
+      <br>
+      Mas toma ai a wiki, se for REEEEALMENTE necessario <a href="https://pt.wikipedia.org/wiki/Verdade_ou_consequ%C3%AAncia">Wiki</a>
+      <br>
+      Agora bom jogo meu amigo, se divirta 😉
+    </div>
+
+    <button mat-raised-button color="primary" (click)="regras()" routerLink="/regras">Regras</button>
+  </mat-card>
+
+</div>

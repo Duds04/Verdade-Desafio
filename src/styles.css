@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #535353;}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.msg-sucess{
+  background-color: #bda34c;
+  color: #fff;
+}
+
+.mat-raised-button.mat-primary{
+  background-color: #e2ae03;
+}
+
+mat-sidenav{
+  margin-top: 0px;
+}
